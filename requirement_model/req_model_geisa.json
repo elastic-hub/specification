@@ -1,0 +1,325 @@
+{
+    "design-principles-P-001-M": {
+    "Function": "Constrained Environment",
+    "Reference": "design-principles",
+    "EntityType": "Platform",
+    "ModelVersionIntroduced": "",
+    "Status": "Active",
+    "Notes": "",
+    "ApplicabilityCriteria": [],
+    "Type": "",
+    "ValidationCriteria": {
+    "MustSatisfy": "the minimal GEISA LEE MUST provide 256MB of RAM and 256MB of persistent storage reserved for GEISA applications |geisa-lee-tux|;",
+    "Keyword": "MUST",
+    "Requirement": {},
+    "Condition": {},
+    "Dependencies": []
+    }
+    },
+    "design-principles-P-002-M": {
+    "Function": "Constrained Environment",
+    "Reference": "design-principles",
+    "EntityType": "Platform",
+    "ModelVersionIntroduced": "",
+    "Status": "Active",
+    "Notes": "",
+    "ApplicabilityCriteria": [],
+    "Type": "",
+    "ValidationCriteria": {
+    "MustSatisfy": "the minimal GEISA VEE MUST provide XX MB of RAM and XX MB or persistent storage |geisa-vee-cloud|;",
+    "Keyword": "MUST",
+    "Requirement": {},
+    "Condition": {},
+    "Dependencies": []
+    }
+    },
+    "design-principles-P-003-O": {
+    "Function": "Constrained Environment",
+    "Reference": "design-principles",
+    "EntityType": "Platform",
+    "ModelVersionIntroduced": "",
+    "Status": "Active",
+    "Notes": "",
+    "ApplicabilityCriteria": [],
+    "Type": "",
+    "ValidationCriteria": {
+    "MustSatisfy": "GEISA EE SHOULD provide 50% of CPU for GEISA applications |geisa-ee-globe|.",
+    "Keyword": "SHOULD",
+    "Requirement": {},
+    "Condition": {},
+    "Dependencies": []
+    }
+    },
+    "system-architecture-P-001-M": {
+    "Function": "LEE Execution Environment",
+    "Reference": "system-architecture",
+    "EntityType": "Platform",
+    "ModelVersionIntroduced": "",
+    "Status": "Active",
+    "Notes": "",
+    "ApplicabilityCriteria": [],
+    "Type": "",
+    "ValidationCriteria": {
+    "MustSatisfy": "The container runtime used by the platform implementation is out of scope, but conformant implementations MUST be able to enforce the permissions and controls the GEISA specification requires.",
+    "Keyword": "MUST",
+    "Requirement": {},
+    "Condition": {},
+    "Dependencies": []
+    }
+    },
+    "system-architecture-P-002-O": {
+    "Function": "LEE Execution Environment",
+    "Reference": "system-architecture",
+    "EntityType": "Platform",
+    "ModelVersionIntroduced": "",
+    "Status": "Active",
+    "Notes": "",
+    "ApplicabilityCriteria": [],
+    "Type": "",
+    "ValidationCriteria": {
+    "MustSatisfy": "For security and efficiency reasons, implementers SHOULD NOT use full general purpose GNU/Linux operating systems.",
+    "Keyword": "SHOULD NOT",
+    "Requirement": {},
+    "Condition": {},
+    "Dependencies": []
+    }
+    },
+    "system-architecture-P-003-O": {
+    "Function": "LEE Execution Environment",
+    "Reference": "system-architecture",
+    "EntityType": "Platform",
+    "ModelVersionIntroduced": "",
+    "Status": "Active",
+    "Notes": "",
+    "ApplicabilityCriteria": [],
+    "Type": "",
+    "ValidationCriteria": {
+    "MustSatisfy": "Implementers SHOULD use distributions specifically built for embedded environments and should excise any unnecessary system components.",
+    "Keyword": "SHOULD",
+    "Requirement": {},
+    "Condition": {},
+    "Dependencies": []
+    }
+    },
+    "system-architecture-P-004-M": {
+    "Function": "VEE Execution Environment",
+    "Reference": "system-architecture",
+    "EntityType": "Platform",
+    "ModelVersionIntroduced": "",
+    "Status": "Active",
+    "Notes": "",
+    "ApplicabilityCriteria": [],
+    "Type": "",
+    "ValidationCriteria": {
+    "MustSatisfy": "The VEE used by the platform implementation is out of scope, but conformant implementations MUST be able to enforce the permissions and controls the GEISA specification requires, and support the GEISA required APIs.",
+    "Keyword": "MUST",
+    "Requirement": {},
+    "Condition": {},
+    "Dependencies": []
+    }
+    },
+    "system-architecture-P-005-M": {
+    "Function": "GEISA API",
+    "Reference": "system-architecture",
+    "EntityType": "Platform",
+    "ModelVersionIntroduced": "",
+    "Status": "Active",
+    "Notes": "",
+    "ApplicabilityCriteria": [],
+    "Type": "",
+    "ValidationCriteria": {
+    "MustSatisfy": "GEISA API conformant platform implementations MUST provide an implementation of the message bus described in :doc:api and MUST respond appropriately to all required API transactions.",
+    "Keyword": "MUST",
+    "Requirement": {},
+    "Condition": {},
+    "Dependencies": []
+    }
+    },
+    "system-architecture-P-006-O": {
+    "Function": "GEISA API",
+    "Reference": "system-architecture",
+    "EntityType": "Platform",
+    "ModelVersionIntroduced": "",
+    "Status": "Active",
+    "Notes": "",
+    "ApplicabilityCriteria": [],
+    "Type": "",
+    "ValidationCriteria": {
+    "MustSatisfy": "Platform implementers SHOULD consider the security implications of the implementation and ensure they are robust against both unintended abuse and deliberate attacks.",
+    "Keyword": "SHOULD",
+    "Requirement": {},
+    "Condition": {},
+    "Dependencies": []
+    }
+    },
+    "hardware-P-001-O": {
+    "Function": "Hardware Expectations",
+    "Reference": "hardware",
+    "EntityType": "Platform",
+    "ModelVersionIntroduced": "",
+    "Status": "Active",
+    "Notes": "",
+    "ApplicabilityCriteria": [],
+    "Type": "",
+    "ValidationCriteria": {
+    "MustSatisfy": "platform implementers MAY choose to use alternate CPUs and/or fewer resources; however, platform implementers should be aware that:",
+    "Keyword": "MAY",
+    "Requirement": {},
+    "Condition": {},
+    "Dependencies": []
+    }
+    },
+    "hardware-P-002-M": {
+    "Function": "Hardware Expectations",
+    "Reference": "hardware",
+    "EntityType": "Platform",
+    "ModelVersionIntroduced": "",
+    "Status": "Active",
+    "Notes": "",
+    "ApplicabilityCriteria": [],
+    "Type": "",
+    "ValidationCriteria": {
+    "MustSatisfy": "It MAY NOT be possible to implement a fully conformant (ADM, API, and EE) platform on a device with fewer resources",
+    "Keyword": "MAY NOT",
+    "Requirement": {},
+    "Condition": {},
+    "Dependencies": []
+    }
+    },
+    "hardware-P-003-M": {
+    "Function": "Hardware Expectations",
+    "Reference": "hardware",
+    "EntityType": "Platform",
+    "ModelVersionIntroduced": "",
+    "Status": "Active",
+    "Notes": "",
+    "ApplicabilityCriteria": [],
+    "Type": "",
+    "ValidationCriteria": {
+    "MustSatisfy": "Platform providers offering a GEISA EE |geisa-ee-globe| MUST provide a toolchain which allows application developers to compile applications written for the GEISA EE.",
+    "Keyword": "MUST",
+    "Requirement": {},
+    "Condition": {},
+    "Dependencies": []
+    }
+    },
+    "hardware-P-004-O": {
+    "Function": "Metrology",
+    "Reference": "hardware",
+    "EntityType": "Platform",
+    "ModelVersionIntroduced": "",
+    "Status": "Active",
+    "Notes": "",
+    "ApplicabilityCriteria": [],
+    "Type": "",
+    "ValidationCriteria": {
+    "MustSatisfy": "some platforms without a local metrology MAY support providing remote metrological data through their local GEISA API",
+    "Keyword": "MAY",
+    "Requirement": {},
+    "Condition": {},
+    "Dependencies": []
+    }
+    },
+    "hardware-P-005-M": {
+    "Function": "Metrology",
+    "Reference": "hardware",
+    "EntityType": "Platform",
+    "ModelVersionIntroduced": "",
+    "Status": "Active",
+    "Notes": "",
+    "ApplicabilityCriteria": [],
+    "Type": "",
+    "ValidationCriteria": {
+    "MustSatisfy": "When waveform data is provided, at a miminum, it SHALL provide: 128 samples per cycle (7.68 kHz at 60 Hz AC frequency) 16 bits per sample",
+    "Keyword": "SHALL",
+    "Requirement": {},
+    "Condition": {},
+    "Dependencies": []
+    }
+    },
+    "hardware-P-006-O": {
+    "Function": "Sensors",
+    "Reference": "hardware",
+    "EntityType": "Platform",
+    "ModelVersionIntroduced": "",
+    "Status": "Active",
+    "Notes": "",
+    "ApplicabilityCriteria": [],
+    "Type": "",
+    "ValidationCriteria": {
+    "MustSatisfy": "A GEISA platform MAY optionally provide one or more sensors.",
+    "Keyword": "MAY",
+    "Requirement": {},
+    "Condition": {},
+    "Dependencies": []
+    }
+    },
+    "hardware-P-007-O": {
+    "Function": "Actuators",
+    "Reference": "hardware",
+    "EntityType": "Platform",
+    "ModelVersionIntroduced": "",
+    "Status": "Active",
+    "Notes": "",
+    "ApplicabilityCriteria": [],
+    "Type": "",
+    "ValidationCriteria": {
+    "MustSatisfy": "A GEISA platform MAY optionally provide one or more actuators.",
+    "Keyword": "MAY",
+    "Requirement": {},
+    "Condition": {},
+    "Dependencies": []
+    }
+    },
+    "hardware-P-008-M": {
+    "Function": "Hardware Expectations",
+    "Reference": "hardware",
+    "EntityType": "Platform",
+    "ModelVersionIntroduced": "",
+    "Status": "Active",
+    "Notes": "",
+    "ApplicabilityCriteria": [],
+    "Type": "",
+    "ValidationCriteria": {
+    "MustSatisfy": "they MUST provide information regarding where third parties can purchase the necessary tool chain and the version of the tool chain in use, and they must provide any supporting files required to allow the tool chain to be used to compile applications for their platform.",
+    "Keyword": "MUST",
+    "Requirement": {},
+    "Condition": {},
+    "Dependencies": []
+    }
+    },
+    "adm-P-001-M": {
+        "Function": "Application & Device Management",
+        "Reference": "adm",
+        "EntityType": "Platform",
+        "ModelVersionIntroduced": "",
+        "Status": "Active",
+        "Notes": "",
+        "ApplicabilityCriteria": [],
+        "Type": "",
+        "ValidationCriteria": {
+          "MustSatisfy": "ADM conformant platform implementations MUST support the LWM2M transactions detailed in this chapter and the supporting device behaviors described.",
+          "Keyword": "MUST",
+          "Requirement": {},
+          "Condition": {},
+          "Dependencies": []
+        }
+      },
+      "adm-P-002-M": {
+        "Function": "Application & Device Management",
+        "Reference": "adm",
+        "EntityType": "Platform",
+        "ModelVersionIntroduced": "",
+        "Status": "Active",
+        "Notes": "",
+        "ApplicabilityCriteria": [],
+        "Type": "",
+        "ValidationCriteria": {
+          "MustSatisfy": "ADM conformant edge management systems MUST support MUST support the LWM2M transactions detailed in this chapter and the supporting edge management system behaviors described.",
+          "Keyword": "MUST",
+          "Requirement": {},
+          "Condition": {},
+          "Dependencies": []
+        }
+      }    
+}
