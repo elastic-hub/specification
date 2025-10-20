@@ -281,45 +281,198 @@
     "ApplicabilityCriteria": [],
     "Type": "",
     "ValidationCriteria": {
-    "MustSatisfy": "they MUST provide information regarding where third parties can purchase the necessary tool chain and the version of the tool chain in use, and they must provide any supporting files required to allow the tool chain to be used to compile applications for their platform.",
-    "Keyword": "MUST",
+      "MustSatisfy": "they MUST provide information regarding where third parties can purchase the necessary tool chain and the version of the tool chain in use, and they must provide any supporting files required to allow the tool chain to be used to compile applications for their platform.",
+      "Keyword": "MUST",
+      "Requirement": {},
+      "Condition": {},
+      "Dependencies": []
+    }
+    },
+    "adm-P-001-M": {
+    "Function": "Application & Device Management",
+    "Reference": "adm",
+    "EntityType": "Platform",
+    "ModelVersionIntroduced": "",
+    "Status": "Active",
+    "Notes": "",
+    "ApplicabilityCriteria": [],
+    "Type": "",
+    "ValidationCriteria": {
+      "MustSatisfy": "ADM conformant platform implementations MUST support the LWM2M transactions detailed in this chapter and the supporting device behaviors described.",
+      "Keyword": "MUST",
+      "Requirement": {},
+      "Condition": {},
+      "Dependencies": []
+    }
+    },
+      "adm-P-002-M": {
+      "Function": "Application & Device Management",
+      "Reference": "adm",
+      "EntityType": "Platform",
+      "ModelVersionIntroduced": "",
+      "Status": "Active",
+      "Notes": "",
+      "ApplicabilityCriteria": [],
+      "Type": "",
+      "ValidationCriteria": {
+        "MustSatisfy": "ADM conformant edge management systems MUST support MUST support the LWM2M transactions detailed in this chapter and the supporting edge management system behaviors described.",
+        "Keyword": "MUST",
+        "Requirement": {},
+        "Condition": {},
+        "Dependencies": []
+    }
+    },
+    "lwm2m-P-001-M": {
+    "Function": "OMA Lightweight M2M",
+    "Reference": "lwm2m",
+    "EntityType": "Platform",
+    "ModelVersionIntroduced": "",
+    "Status": "Active",
+    "Notes": "",
+    "ApplicabilityCriteria": [],
+    "Type": "",
+    "ValidationCriteria": {
+    "MustSatisfy": "ADM conformant platforms and Edge Management Systems (EMS) SHALL support LWM2M v1.2. [LWM2M-Core]",
+    "Keyword": "SHALL",
     "Requirement": {},
     "Condition": {},
     "Dependencies": []
     }
     },
-    "adm-P-001-M": {
-        "Function": "Application & Device Management",
-        "Reference": "adm",
-        "EntityType": "Platform",
-        "ModelVersionIntroduced": "",
-        "Status": "Active",
-        "Notes": "",
-        "ApplicabilityCriteria": [],
-        "Type": "",
-        "ValidationCriteria": {
-          "MustSatisfy": "ADM conformant platform implementations MUST support the LWM2M transactions detailed in this chapter and the supporting device behaviors described.",
-          "Keyword": "MUST",
-          "Requirement": {},
-          "Condition": {},
-          "Dependencies": []
-        }
-      },
-      "adm-P-002-M": {
-        "Function": "Application & Device Management",
-        "Reference": "adm",
-        "EntityType": "Platform",
-        "ModelVersionIntroduced": "",
-        "Status": "Active",
-        "Notes": "",
-        "ApplicabilityCriteria": [],
-        "Type": "",
-        "ValidationCriteria": {
-          "MustSatisfy": "ADM conformant edge management systems MUST support MUST support the LWM2M transactions detailed in this chapter and the supporting edge management system behaviors described.",
-          "Keyword": "MUST",
-          "Requirement": {},
-          "Condition": {},
-          "Dependencies": []
-        }
-      }    
+    "lwm2m-P-002-O": {
+    "Function": "OMA Lightweight M2M",
+    "Reference": "lwm2m",
+    "EntityType": "Platform",
+    "ModelVersionIntroduced": "",
+    "Status": "Active",
+    "Notes": "",
+    "ApplicabilityCriteria": [],
+    "Type": "",
+    "ValidationCriteria": {
+    "MustSatisfy": "ADM conformant platforms and EMS MAY support LWM2M versions greater than v1.2; however, they MUST retain compatibility with v1.2.",
+    "Keyword": "MAY",
+    "Requirement": {},
+    "Condition": {},
+    "Dependencies": []
+    }
+    },
+    "lwm2m-P-003-M": {
+    "Function": "OMA Lightweight M2M",
+    "Reference": "lwm2m",
+    "EntityType": "Platform",
+    "ModelVersionIntroduced": "",
+    "Status": "Active",
+    "Notes": "",
+    "ApplicabilityCriteria": [],
+    "Type": "",
+    "ValidationCriteria": {
+    "MustSatisfy": "ADM conformant platforms and EMS SHALL support CoAP over UDP for message transport. [LWM2M-Transport]",
+    "Keyword": "SHALL",
+    "Requirement": {},
+    "Condition": {},
+    "Dependencies": []
+    }
+    },
+    "lwm2m-P-004-M": {
+    "Function": "OMA Lightweight M2M",
+    "Reference": "lwm2m",
+    "EntityType": "Platform",
+    "ModelVersionIntroduced": "",
+    "Status": "Active",
+    "Notes": "",
+    "ApplicabilityCriteria": [],
+    "Type": "",
+    "ValidationCriteria": {
+    "MustSatisfy": "ADM conformant platforms and EMS SHALL support DTLS for CoAp security.",
+    "Keyword": "SHALL",
+    "Requirement": {},
+    "Condition": {},
+    "Dependencies": []
+    }
+    },
+    "lwm2m-P-005-M": {
+    "Function": "OMA Lightweight M2M",
+    "Reference": "lwm2m",
+    "EntityType": "Platform",
+    "ModelVersionIntroduced": "",
+    "Status": "Active",
+    "Notes": "",
+    "ApplicabilityCriteria": [],
+    "Type": "",
+    "ValidationCriteria": {
+    "MustSatisfy": "ADM conformant platforms and EMS SHALL support the Bootstrap, Registration, Device Management and Information Reporting interfaces.",
+    "Keyword": "SHALL",
+    "Requirement": {},
+    "Condition": {},
+    "Dependencies": []
+    }
+    },
+    "lwm2m-S-006-M": {
+    "Function": "OMA Lightweight M2M",
+    "Reference": "lwm2m",
+    "EntityType": "Server",
+    "ModelVersionIntroduced": "",
+    "Status": "Active",
+    "Notes": "",
+    "ApplicabilityCriteria": [],
+    "Type": "",
+    "ValidationCriteria": {
+    "MustSatisfy": "ADM conformant EMS shall support the following LWM2M Objects",
+    "Keyword": "SHALL",
+    "Requirement": {},
+    "Condition": {},
+    "Dependencies": []
+    }
+    },
+    "lwm2m-P-007-M": {
+    "Function": "OMA Lightweight M2M",
+    "Reference": "lwm2m",
+    "EntityType": "Platform",
+    "ModelVersionIntroduced": "",
+    "Status": "Active",
+    "Notes": "",
+    "ApplicabilityCriteria": [],
+    "Type": "",
+    "ValidationCriteria": {
+    "MustSatisfy": "ADM conformant platforms shall support the following LWM2M Objects",
+    "Keyword": "SHALL",
+    "Requirement": {},
+    "Condition": {},
+    "Dependencies": []
+    }
+    },
+    "lwm2m-P-008-M": {
+    "Function": "OMA Lightweight M2M",
+    "Reference": "lwm2m",
+    "EntityType": "Platform",
+    "ModelVersionIntroduced": "",
+    "Status": "Active",
+    "Notes": "",
+    "ApplicabilityCriteria": [],
+    "Type": "",
+    "ValidationCriteria": {
+    "MustSatisfy": "ADM conformant platforms with 3GPP network interfaces SHALL support the followng LWM2M Objects:",
+    "Keyword": "SHALL",
+    "Requirement": {},
+    "Condition": {},
+    "Dependencies": []
+    }
+    },
+    "lwm2m-P-009-M": {
+    "Function": "OMA Lightweight M2M",
+    "Reference": "lwm2m",
+    "EntityType": "Platform",
+    "ModelVersionIntroduced": "",
+    "Status": "Active",
+    "Notes": "",
+    "ApplicabilityCriteria": [],
+    "Type": "",
+    "ValidationCriteria": {
+    "MustSatisfy": "ADM conformant platforms with GPS interfaces SHALL support the followng LWM2M Objects:",
+    "Keyword": "SHALL",
+    "Requirement": {},
+    "Condition": {},
+    "Dependencies": []
+    }
+    }
 }
