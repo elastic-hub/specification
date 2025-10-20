@@ -1205,5 +1205,90 @@
     "Condition": {},
     "Dependencies": []
     }
+    },
+    "platform-enumeration-P-001-M": {
+    "Function": "Platform Enumeration",
+    "Reference": "platform-enumeration",
+    "EntityType": "Platform",
+    "ModelVersionIntroduced": "",
+    "Status": "Active",
+    "Notes": "",
+    "ApplicabilityCriteria": [],
+    "Type": "",
+    "ValidationCriteria": {
+    "MustSatisfy": "During those events, all GEISA applications MUST be restarted so they will notice the new data.",
+    "Keyword": "MUST",
+    "Requirement": {},
+    "Condition": {},
+    "Dependencies": []
+    }
+    },
+    "platform-enumeration-P-002-M": {
+    "Function": "Platform Enumeration",
+    "Reference": "platform-enumeration",
+    "EntityType": "Platform",
+    "ModelVersionIntroduced": "",
+    "Status": "Active",
+    "Notes": "",
+    "ApplicabilityCriteria": [],
+    "Type": "",
+    "ValidationCriteria": {
+    "MustSatisfy": "Because the Platform Enumeration data is constant, the platform MUST make it available via a static file placed within the EE.",
+    "Keyword": "MUST",
+    "Requirement": {},
+    "Condition": {},
+    "Dependencies": []
+    }
+    },
+    "platform-enumeration-P-003-M": {
+    "Function": "Hardware and Firmware",
+    "Reference": "platform-enumeration",
+    "EntityType": "Platform",
+    "ModelVersionIntroduced": "",
+    "Status": "Active",
+    "Notes": "",
+    "ApplicabilityCriteria": [],
+    "Type": "",
+    "ValidationCriteria": {
+    "MustSatisfy": "GEISA mandates it MUST include at a minimum the versions of: 1) the base host OS, and 2) the GEISA platform daemon/library.",
+    "Keyword": "MUST",
+    "Requirement": {},
+    "Condition": {},
+    "Dependencies": []
+    }
+    },
+    "platform-enumeration-A-004-M": {
+    "Function": "Application Information",
+    "Reference": "platform-enumeration",
+    "EntityType": "Application",
+    "ModelVersionIntroduced": "",
+    "Status": "Active",
+    "Notes": "",
+    "ApplicabilityCriteria": [],
+    "Type": "",
+    "ValidationCriteria": {
+    "MustSatisfy": "Applications MUST be able to retrieve the Deployment Manifest as described in :doc:/adm/manifests.",
+    "Keyword": "MUST",
+    "Requirement": {},
+    "Condition": {},
+    "Dependencies": []
+    }
+    },
+    "platform-enumeration-P-005-M": {
+    "Function": "Metrology Hardware",
+    "Reference": "platform-enumeration",
+    "EntityType": "Platform",
+    "ModelVersionIntroduced": "",
+    "Status": "Active",
+    "Notes": "",
+    "ApplicabilityCriteria": [],
+    "Type": "",
+    "ValidationCriteria": {
+    "MustSatisfy": "For Meter type devices, the platform MUST provide at a minimum: - Meter Rating/Class - Meter Form - Number of Phases and if Neutral connected - Nominal Phase Angle - Nominal Frequency - Nominal Phase-to-Phase and Phase-to-Neutral Voltage (when applicable)",
+    "Keyword": "MUST",
+    "Requirement": {},
+    "Condition": {},
+    "Dependencies": []
+    }
     }
 }
