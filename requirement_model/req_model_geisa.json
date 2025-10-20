@@ -559,5 +559,260 @@
     "Condition": {},
     "Dependencies": []
     }
+    },
+    "adm-manifests-A-001-M": {
+    "Function": "Application Manifests",
+    "Reference": "adm-manifests",
+    "EntityType": "Application",
+    "ModelVersionIntroduced": "",
+    "Status": "Active",
+    "Notes": "",
+    "ApplicabilityCriteria": [],
+    "Type": "",
+    "ValidationCriteria": {
+    "MustSatisfy": "GEISA vendor and operator application manifests SHALL include:",
+    "Keyword": "SHALL",
+    "Requirement": {},
+    "Condition": {},
+    "Dependencies": []
+    }
+    },
+    "adm-manifests-A-002-M": {
+    "Function": "Application Manifests",
+    "Reference": "adm-manifests",
+    "EntityType": "Application",
+    "ModelVersionIntroduced": "",
+    "Status": "Active",
+    "Notes": "",
+    "ApplicabilityCriteria": [],
+    "Type": "",
+    "ValidationCriteria": {
+    "MustSatisfy": "The GEISA EE shall not activate an application unless the hash of the image matches the hash in the meta-data",
+    "Keyword": "shall",
+    "Requirement": {},
+    "Condition": {},
+    "Dependencies": []
+    }
+    },
+    "adm-manifests-A-003-M": {
+    "Function": "Application Manifests",
+    "Reference": "adm-manifests",
+    "EntityType": "Application",
+    "ModelVersionIntroduced": "",
+    "Status": "Active",
+    "Notes": "",
+    "ApplicabilityCriteria": [],
+    "Type": "",
+    "ValidationCriteria": {
+    "MustSatisfy": "GEISA vendor manifests SHALL include:",
+    "Keyword": "SHALL",
+    "Requirement": {},
+    "Condition": {},
+    "Dependencies": []
+    }
+    },
+    "adm-manifests-A-004-M": {
+    "Function": "Off-Device Communication",
+    "Reference": "adm-manifests",
+    "EntityType": "Application",
+    "ModelVersionIntroduced": "",
+    "Status": "Active",
+    "Notes": "",
+    "ApplicabilityCriteria": [],
+    "Type": "",
+    "ValidationCriteria": {
+    "MustSatisfy": "Each application that performs off-device communication MUST specify the classes, destinations, and daily volume of that communication.",
+    "Keyword": "MUST",
+    "Requirement": {},
+    "Condition": {},
+    "Dependencies": []
+    }
+    },
+    "app-isolation-A-001-M": {
+    "Function": "Application Isolation",
+    "Reference": "app-isolation",
+    "EntityType": "Application",
+    "ModelVersionIntroduced": "",
+    "Status": "Active",
+    "Notes": "",
+    "ApplicabilityCriteria": [],
+    "Type": "",
+    "ValidationCriteria": {
+    "MustSatisfy": "VEE MUST support the permissions discussed in this chapter, many of the technical details discussed in this chapter are specific to LEE.",
+    "Keyword": "MUST",
+    "Requirement": {},
+    "Condition": {},
+    "Dependencies": []
+    }
+    },
+    "app-isolation-A-002-M": {
+    "Function": "Container Resource Management",
+    "Reference": "app-isolation",
+    "EntityType": "Application",
+    "ModelVersionIntroduced": "",
+    "Status": "Active",
+    "Notes": "",
+    "ApplicabilityCriteria": [],
+    "Type": "",
+    "ValidationCriteria": {
+    "MustSatisfy": "If that limit is increased, an implementation MUST honor that change and provide the application with a larger volume or limit without loss of persistent data.",
+    "Keyword": "MUST",
+    "Requirement": {},
+    "Condition": {},
+    "Dependencies": []
+    }
+    },
+    "app-isolation-A-003-C": {
+    "Function": "Container Resource Management",
+    "Reference": "app-isolation",
+    "EntityType": "Application",
+    "ModelVersionIntroduced": "",
+    "Status": "Active",
+    "Notes": "",
+    "ApplicabilityCriteria": [],
+    "Type": "",
+    "ValidationCriteria": {
+    "MustSatisfy": "If that limit is reduced, an implementation SHOULD attempt to honor that change and reduce the volume or limit, however if the Application is using more than the new limit an alarm or exception SHOULD be raised to the EMS and the action MUST be aborted leaving the Application running with the previous limit.",
+    "Keyword": "SHOULD",
+    "Requirement": {},
+    "Condition": {},
+    "Dependencies": []
+    }
+    },
+    "app-isolation-A-004-M": {
+    "Function": "Container Resource Management",
+    "Reference": "app-isolation",
+    "EntityType": "Application",
+    "ModelVersionIntroduced": "",
+    "Status": "Active",
+    "Notes": "",
+    "ApplicabilityCriteria": [],
+    "Type": "",
+    "ValidationCriteria": {
+    "MustSatisfy": "The action MUST be aborted leaving the Application running with the previous limit.",
+    "Keyword": "MUST",
+    "Requirement": {},
+    "Condition": {},
+    "Dependencies": []
+    }
+    },
+    "lee-operating-system-P-001-M": {
+    "Function": "Operating System",
+    "Reference": "operating-system",
+    "EntityType": "Platform",
+    "ModelVersionIntroduced": "",
+    "Status": "Active",
+    "Notes": "",
+    "ApplicabilityCriteria": [],
+    "Type": "",
+    "ValidationCriteria": {
+    "MustSatisfy": "GEISA LEE SHALL use Linux as the core operating system.",
+    "Keyword": "SHALL",
+    "Requirement": {},
+    "Condition": {},
+    "Dependencies": []
+    }
+    },
+    "lee-operating-system-P-002-O": {
+    "Function": "Operating System",
+    "Reference": "operating-system",
+    "EntityType": "Platform",
+    "ModelVersionIntroduced": "",
+    "Status": "Active",
+    "Notes": "",
+    "ApplicabilityCriteria": [],
+    "Type": "",
+    "ValidationCriteria": {
+    "MustSatisfy": "The LEE platform implementer SHOULD use a Linux 6.x or greater kernel.",
+    "Keyword": "SHOULD",
+    "Requirement": {},
+    "Condition": {},
+    "Dependencies": []
+    }
+    },
+    "lee-operating-system-P-003-M": {
+    "Function": "Operating System",
+    "Reference": "operating-system",
+    "EntityType": "Platform",
+    "ModelVersionIntroduced": "",
+    "Status": "Active",
+    "Notes": "",
+    "ApplicabilityCriteria": [],
+    "Type": "",
+    "ValidationCriteria": {
+    "MustSatisfy": "A LEE platform may use an older version if needed, but it MUST provide the needed application isolation requirements.",
+    "Keyword": "MUST",
+    "Requirement": {},
+    "Condition": {},
+    "Dependencies": []
+    }
+    },
+    "lee-operating-system-P-004-M": {
+    "Function": "Operating System",
+    "Reference": "operating-system",
+    "EntityType": "Platform",
+    "ModelVersionIntroduced": "",
+    "Status": "Active",
+    "Notes": "",
+    "ApplicabilityCriteria": [],
+    "Type": "",
+    "ValidationCriteria": {
+    "MustSatisfy": "The attack surface and size of the Linux kernel and base libraries provided MUST be minimized.",
+    "Keyword": "MUST",
+    "Requirement": {},
+    "Condition": {},
+    "Dependencies": []
+    }
+    },
+    "lee-operating-system-P-005-O": {
+    "Function": "Operating System",
+    "Reference": "operating-system",
+    "EntityType": "Platform",
+    "ModelVersionIntroduced": "",
+    "Status": "Active",
+    "Notes": "",
+    "ApplicabilityCriteria": [],
+    "Type": "",
+    "ValidationCriteria": {
+    "MustSatisfy": "A LEE platform implementation SHOULD remove unnecessary components and libraries providing the application the needed functionality but not a full Linux distribution experience.",
+    "Keyword": "SHOULD",
+    "Requirement": {},
+    "Condition": {},
+    "Dependencies": []
+    }
+    },
+    "operating-system-U-006-O": {
+    "Function": "Operating System",
+    "Reference": "operating-system",
+    "EntityType": "Undefined",
+    "ModelVersionIntroduced": "",
+    "Status": "Active",
+    "Notes": "",
+    "ApplicabilityCriteria": [],
+    "Type": "",
+    "ValidationCriteria": {
+    "MustSatisfy": "Applications, however, do specify their needed CPU and memory resources in their Application manifest and operators SHOULD consider the finite resources available when deploying Applications.",
+    "Keyword": "SHOULD",
+    "Requirement": {},
+    "Condition": {},
+    "Dependencies": []
+    }
+    },
+    "lee-operating-system-A-007-O": {
+    "Function": "Operating System",
+    "Reference": "operating-system",
+    "EntityType": "Application",
+    "ModelVersionIntroduced": "",
+    "Status": "Active",
+    "Notes": "",
+    "ApplicabilityCriteria": [],
+    "Type": "",
+    "ValidationCriteria": {
+    "MustSatisfy": "Applications SHOULD receive, over time, their resource allotment and not be starved to the point where metrological and waveform data is lost.",
+    "Keyword": "SHOULD",
+    "Requirement": {},
+    "Condition": {},
+    "Dependencies": []
+    }
     }
 }
