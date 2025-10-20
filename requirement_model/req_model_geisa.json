@@ -474,5 +474,90 @@
     "Condition": {},
     "Dependencies": []
     }
+    },
+    "adm-C-001-M": {
+    "Function": "Bootstrapping",
+    "Reference": "adm",
+    "EntityType": "Client",
+    "ModelVersionIntroduced": "",
+    "Status": "Active",
+    "Notes": "",
+    "ApplicabilityCriteria": [],
+    "Type": "",
+    "ValidationCriteria": {
+    "MustSatisfy": "As noted in [LWM2M-Core] GEISA ADM conformant devices SHALL support Client Initiated bootstrapping.",
+    "Keyword": "SHALL",
+    "Requirement": {},
+    "Condition": {},
+    "Dependencies": []
+    }
+    },
+    "adm-C-002-O": {
+    "Function": "Bootstrapping",
+    "Reference": "adm",
+    "EntityType": "Client",
+    "ModelVersionIntroduced": "",
+    "Status": "Active",
+    "Notes": "",
+    "ApplicabilityCriteria": [],
+    "Type": "",
+    "ValidationCriteria": {
+    "MustSatisfy": "GESIA ADM conformant devices MAY support other bootstrapping methods.",
+    "Keyword": "MAY",
+    "Requirement": {},
+    "Condition": {},
+    "Dependencies": []
+    }
+    },
+    "adm-C-003-M": {
+    "Function": "Bootstrapping",
+    "Reference": "adm",
+    "EntityType": "Client",
+    "ModelVersionIntroduced": "",
+    "Status": "Active",
+    "Notes": "",
+    "ApplicabilityCriteria": [],
+    "Type": "",
+    "ValidationCriteria": {
+    "MustSatisfy": "GEISA ADM conformant devices SHALL provide accessible out-of-band mechanism which allows the system operator to preprovision the URL of the CoAp Bootstrap-Server, the Bootstrap-Server Account credentials, and any other data needed to complete the boostrapping process (e.g. certificates, keys, etc.).",
+    "Keyword": "SHALL",
+    "Requirement": {},
+    "Condition": {},
+    "Dependencies": []
+    }
+    },
+    "adm-S-004-M": {
+    "Function": "Bootstrapping",
+    "Reference": "adm",
+    "EntityType": "Server",
+    "ModelVersionIntroduced": "",
+    "Status": "Active",
+    "Notes": "",
+    "ApplicabilityCriteria": [],
+    "Type": "",
+    "ValidationCriteria": {
+    "MustSatisfy": "GEISA ADM conformant edge management systems SHALL provide a Bootstrap-Server implementation.",
+    "Keyword": "SHALL",
+    "Requirement": {},
+    "Condition": {},
+    "Dependencies": []
+    }
+    },
+    "registration-P-001-M": {
+    "Function": "Registration",
+    "Reference": "registration",
+    "EntityType": "Platform",
+    "ModelVersionIntroduced": "",
+    "Status": "Active",
+    "Notes": "",
+    "ApplicabilityCriteria": [],
+    "Type": "",
+    "ValidationCriteria": {
+    "MustSatisfy": "GEISA ADM conformant devices SHALL attempt to register with a GEISA conformant edge management system on startup.",
+    "Keyword": "SHALL",
+    "Requirement": {},
+    "Condition": {},
+    "Dependencies": []
+    }
     }
 }
