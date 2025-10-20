@@ -1359,158 +1359,157 @@
     "Dependencies": []
     }
     },
-    {
-      "waveform-A-001-M": {
-      "Function": "Device Capabilities",
-      "Reference": "waveform",
-      "EntityType": "Application",
-      "ModelVersionIntroduced": "",
-      "Status": "Active",
-      "Notes": "",
-      "ApplicabilityCriteria": [],
-      "Type": "",
-      "ValidationCriteria": {
-      "MustSatisfy": "GEISA applications MUST be able to query the platform to understand what forms of waveform data are supported.",
-      "Keyword": "MUST",
-      "Requirement": {},
-      "Condition": {},
-      "Dependencies": []
-      }
-      },
-      "waveform-P-002-M": {
-      "Function": "Device Capabilities",
-      "Reference": "waveform",
-      "EntityType": "Platform",
-      "ModelVersionIntroduced": "",
-      "Status": "Active",
-      "Notes": "",
-      "ApplicabilityCriteria": [],
-      "Type": "",
-      "ValidationCriteria": {
-      "MustSatisfy": "Platforms that provide waveform data MUST, at a minimum provide: 128 samples per cycle (e.g 7.68kHz for 60 Hz AC or 6.4kHz for 50 Hz AC), 16-bit sample resolution, data MUST be pushed at least every 200 ms, data MUST indicate whether it is zero-crossing aligned or not, zero-crossing aligned data MUST be aligned to the zero cross of Phase A on Polyphase Devices.",
-      "Keyword": "MUST",
-      "Requirement": {},
-      "Condition": {},
-      "Dependencies": []
-      }
-      },
-      "waveform-P-003-O": {
-      "Function": "Device Capabilities",
-      "Reference": "waveform",
-      "EntityType": "Platform",
-      "ModelVersionIntroduced": "",
-      "Status": "Active",
-      "Notes": "",
-      "ApplicabilityCriteria": [],
-      "Type": "",
-      "ValidationCriteria": {
-      "MustSatisfy": "Platforms MAY offer alternate sample rates and resolutions.",
-      "Keyword": "MAY",
-      "Requirement": {},
-      "Condition": {},
-      "Dependencies": []
-      }
-      },
-      "waveform-A-004-M": {
-      "Function": "Device Capabilities",
-      "Reference": "waveform",
-      "EntityType": "Application",
-      "ModelVersionIntroduced": "",
-      "Status": "Active",
-      "Notes": "",
-      "ApplicabilityCriteria": [],
-      "Type": "",
-      "ValidationCriteria": {
-      "MustSatisfy": "Data for all channels MUST be aligned to one another.",
-      "Keyword": "MUST",
-      "Requirement": {},
-      "Condition": {},
-      "Dependencies": []
-      }
-      },
-      "waveform-A-005-M": {
-      "Function": "Device Capabilities",
-      "Reference": "waveform",
-      "EntityType": "Application",
-      "ModelVersionIntroduced": "",
-      "Status": "Active",
-      "Notes": "",
-      "ApplicabilityCriteria": [],
-      "Type": "",
-      "ValidationCriteria": {
-      "MustSatisfy": "An individual sample in channel 1 MUST have been sampled at the same time that the corresponding samples in other channels (i.e., 2, 3, etc.) were.",
-      "Keyword": "MUST",
-      "Requirement": {},
-      "Condition": {},
-      "Dependencies": []
-      }
-      },
-      "waveform-A-006-C": {
-      "Function": "Device Capabilities (Note)",
-      "Reference": "waveform",
-      "EntityType": "Application",
-      "ModelVersionIntroduced": "",
-      "Status": "Active",
-      "Notes": "Condition: If the device supports multiple capture frequencies or channel counts",
-      "ApplicabilityCriteria": [],
-      "Type": "",
-      "ValidationCriteria": {
-      "MustSatisfy": "Devices MAY expose different waveform stream choices to applications if they support multiple capture frequencies or channel counts.  If so, an application MUST be able to activate one or more streams simultaneously if desired.",
-      "Keyword": "MUST",
-      "Requirement": {},
-      "Condition": {      },
-      "Dependencies": []
-      }
-      },
-      "waveform-P-007-M": {
-      "Function": "Data Format",
-      "Reference": "waveform",
-      "EntityType": "Platform",
-      "ModelVersionIntroduced": "",
-      "Status": "Active",
-      "Notes": "",
-      "ApplicabilityCriteria": [],
-      "Type": "",
-      "ValidationCriteria": {
-      "MustSatisfy": "This socket MUST be provisioned into the application's isolated environment using a path provided in the activation API response.",
-      "Keyword": "MUST",
-      "Requirement": {},
-      "Condition": {},
-      "Dependencies": []
-      }
-      },
-      "waveform-P-008-M": {
-      "Function": "Data Format",
-      "Reference": "waveform",
-      "EntityType": "Platform",
-      "ModelVersionIntroduced": "",
-      "Status": "Active",
-      "Notes": "",
-      "ApplicabilityCriteria": [],
-      "Type": "",
-      "ValidationCriteria": {
-      "MustSatisfy": "The timestamp field MUST be the timestamp for the first sample in the frame.",
-      "Keyword": "MUST",
-      "Requirement": {},
-      "Condition": {},
-      "Dependencies": []
-      }
-      },
-      "waveform-P-009-M": {
-      "Function": "Data Format",
-      "Reference": "waveform",
-      "EntityType": "Platform",
-      "ModelVersionIntroduced": "",
-      "Status": "Active",
-      "Notes": "",
-      "ApplicabilityCriteria": [],
-      "Type": "",
-      "ValidationCriteria": {
-      "MustSatisfy": "Samples within the data array MUST be ordered as follows: Time 0 - All voltage channels - All current channels; Time 1 - All voltage channels - All current channels; Time 2 - All voltage channels - All current channels; and so on.",
-      "Keyword": "MUST",
-      "Requirement": {},
-      "Condition": {},
-      "Dependencies": []
-      }
-      }
+    "waveform-A-001-M": {
+    "Function": "Device Capabilities",
+    "Reference": "waveform",
+    "EntityType": "Application",
+    "ModelVersionIntroduced": "",
+    "Status": "Active",
+    "Notes": "",
+    "ApplicabilityCriteria": [],
+    "Type": "",
+    "ValidationCriteria": {
+    "MustSatisfy": "GEISA applications MUST be able to query the platform to understand what forms of waveform data are supported.",
+    "Keyword": "MUST",
+    "Requirement": {},
+    "Condition": {},
+    "Dependencies": []
+    }
+    },
+    "waveform-P-002-M": {
+    "Function": "Device Capabilities",
+    "Reference": "waveform",
+    "EntityType": "Platform",
+    "ModelVersionIntroduced": "",
+    "Status": "Active",
+    "Notes": "",
+    "ApplicabilityCriteria": [],
+    "Type": "",
+    "ValidationCriteria": {
+    "MustSatisfy": "Platforms that provide waveform data MUST, at a minimum provide: 128 samples per cycle (e.g 7.68kHz for 60 Hz AC or 6.4kHz for 50 Hz AC), 16-bit sample resolution, data MUST be pushed at least every 200 ms, data MUST indicate whether it is zero-crossing aligned or not, zero-crossing aligned data MUST be aligned to the zero cross of Phase A on Polyphase Devices.",
+    "Keyword": "MUST",
+    "Requirement": {},
+    "Condition": {},
+    "Dependencies": []
+    }
+    },
+    "waveform-P-003-O": {
+    "Function": "Device Capabilities",
+    "Reference": "waveform",
+    "EntityType": "Platform",
+    "ModelVersionIntroduced": "",
+    "Status": "Active",
+    "Notes": "",
+    "ApplicabilityCriteria": [],
+    "Type": "",
+    "ValidationCriteria": {
+    "MustSatisfy": "Platforms MAY offer alternate sample rates and resolutions.",
+    "Keyword": "MAY",
+    "Requirement": {},
+    "Condition": {},
+    "Dependencies": []
+    }
+    },
+    "waveform-A-004-M": {
+    "Function": "Device Capabilities",
+    "Reference": "waveform",
+    "EntityType": "Application",
+    "ModelVersionIntroduced": "",
+    "Status": "Active",
+    "Notes": "",
+    "ApplicabilityCriteria": [],
+    "Type": "",
+    "ValidationCriteria": {
+    "MustSatisfy": "Data for all channels MUST be aligned to one another.",
+    "Keyword": "MUST",
+    "Requirement": {},
+    "Condition": {},
+    "Dependencies": []
+    }
+    },
+    "waveform-A-005-M": {
+    "Function": "Device Capabilities",
+    "Reference": "waveform",
+    "EntityType": "Application",
+    "ModelVersionIntroduced": "",
+    "Status": "Active",
+    "Notes": "",
+    "ApplicabilityCriteria": [],
+    "Type": "",
+    "ValidationCriteria": {
+    "MustSatisfy": "An individual sample in channel 1 MUST have been sampled at the same time that the corresponding samples in other channels (i.e., 2, 3, etc.) were.",
+    "Keyword": "MUST",
+    "Requirement": {},
+    "Condition": {},
+    "Dependencies": []
+    }
+    },
+    "waveform-A-006-C": {
+    "Function": "Device Capabilities (Note)",
+    "Reference": "waveform",
+    "EntityType": "Application",
+    "ModelVersionIntroduced": "",
+    "Status": "Active",
+    "Notes": "Condition: If the device supports multiple capture frequencies or channel counts",
+    "ApplicabilityCriteria": [],
+    "Type": "",
+    "ValidationCriteria": {
+    "MustSatisfy": "Devices MAY expose different waveform stream choices to applications if they support multiple capture frequencies or channel counts.  If so, an application MUST be able to activate one or more streams simultaneously if desired.",
+    "Keyword": "MUST",
+    "Requirement": {},
+    "Condition": {      },
+    "Dependencies": []
+    }
+    },
+    "waveform-P-007-M": {
+    "Function": "Data Format",
+    "Reference": "waveform",
+    "EntityType": "Platform",
+    "ModelVersionIntroduced": "",
+    "Status": "Active",
+    "Notes": "",
+    "ApplicabilityCriteria": [],
+    "Type": "",
+    "ValidationCriteria": {
+    "MustSatisfy": "This socket MUST be provisioned into the application's isolated environment using a path provided in the activation API response.",
+    "Keyword": "MUST",
+    "Requirement": {},
+    "Condition": {},
+    "Dependencies": []
+    }
+    },
+    "waveform-P-008-M": {
+    "Function": "Data Format",
+    "Reference": "waveform",
+    "EntityType": "Platform",
+    "ModelVersionIntroduced": "",
+    "Status": "Active",
+    "Notes": "",
+    "ApplicabilityCriteria": [],
+    "Type": "",
+    "ValidationCriteria": {
+    "MustSatisfy": "The timestamp field MUST be the timestamp for the first sample in the frame.",
+    "Keyword": "MUST",
+    "Requirement": {},
+    "Condition": {},
+    "Dependencies": []
+    }
+    },
+    "waveform-P-009-M": {
+    "Function": "Data Format",
+    "Reference": "waveform",
+    "EntityType": "Platform",
+    "ModelVersionIntroduced": "",
+    "Status": "Active",
+    "Notes": "",
+    "ApplicabilityCriteria": [],
+    "Type": "",
+    "ValidationCriteria": {
+    "MustSatisfy": "Samples within the data array MUST be ordered as follows: Time 0 - All voltage channels - All current channels; Time 1 - All voltage channels - All current channels; Time 2 - All voltage channels - All current channels; and so on.",
+    "Keyword": "MUST",
+    "Requirement": {},
+    "Condition": {},
+    "Dependencies": []
+    }
+    }
 }
