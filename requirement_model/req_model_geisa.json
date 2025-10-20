@@ -933,5 +933,277 @@
     "Condition": {},
     "Dependencies": []
     }
+    },
+    "api-architecture-P-001-M": {
+    "Function": "API Architecture",
+    "Reference": "api-architecture",
+    "EntityType": "Platform",
+    "ModelVersionIntroduced": "",
+    "Status": "Active",
+    "Notes": "",
+    "ApplicabilityCriteria": [],
+    "Type": "",
+    "ValidationCriteria": {
+    "MustSatisfy": "A GEISA platform SHALL provide a MQTT broker and daemon(s) that GEISA applications interact with.",
+    "Keyword": "SHALL",
+    "Requirement": {},
+    "Condition": {},
+    "Dependencies": []
+    }
+    },
+    "api-architecture-A-002-O": {
+    "Function": "API Architecture",
+    "Reference": "api-architecture",
+    "EntityType": "Application",
+    "ModelVersionIntroduced": "",
+    "Status": "Active",
+    "Notes": "",
+    "ApplicabilityCriteria": [],
+    "Type": "",
+    "ValidationCriteria": {
+    "MustSatisfy": "GEISA applications MAY interact with the GEISA MQTT broker using the MQTT client library that best suites their application's programming language and architecture.",
+    "Keyword": "MAY",
+    "Requirement": {},
+    "Condition": {},
+    "Dependencies": []
+    }
+    },
+    "api-architecture-A-003-O": {
+    "Function": "API Architecture",
+    "Reference": "api-architecture",
+    "EntityType": "Application",
+    "ModelVersionIntroduced": "",
+    "Status": "Active",
+    "Notes": "",
+    "ApplicabilityCriteria": [],
+    "Type": "",
+    "ValidationCriteria": {
+    "MustSatisfy": "MQTT client libraries exist for many programming languages and Developers MAY make use of one provided by the GEISA EE |geisa-ee-globe| or bundle their own with their application.",
+    "Keyword": "MAY",
+    "Requirement": {},
+    "Condition": {},
+    "Dependencies": []
+    }
+    },
+    "api-architecture-P-004-M": {
+    "Function": "API Architecture",
+    "Reference": "api-architecture",
+    "EntityType": "Platform",
+    "ModelVersionIntroduced": "",
+    "Status": "Active",
+    "Notes": "",
+    "ApplicabilityCriteria": [],
+    "Type": "",
+    "ValidationCriteria": {
+    "MustSatisfy": "GEISA API conformant platforms SHALL provide an MQTT version 5 broker.",
+    "Keyword": "SHALL",
+    "Requirement": {},
+    "Condition": {},
+    "Dependencies": []
+    }
+    },
+    "api-architecture-P-005-M": {
+    "Function": "API Architecture",
+    "Reference": "api-architecture",
+    "EntityType": "Platform",
+    "ModelVersionIntroduced": "",
+    "Status": "Active",
+    "Notes": "",
+    "ApplicabilityCriteria": [],
+    "Type": "",
+    "ValidationCriteria": {
+    "MustSatisfy": "GEISA API conformant platforms SHALL support all API transactions listed as mandatory within this specification.",
+    "Keyword": "SHALL",
+    "Requirement": {},
+    "Condition": {},
+    "Dependencies": []
+    }
+    },
+    "api-architecture-P-006-M": {
+    "Function": "API Architecture",
+    "Reference": "api-architecture",
+    "EntityType": "Platform",
+    "ModelVersionIntroduced": "",
+    "Status": "Active",
+    "Notes": "",
+    "ApplicabilityCriteria": [],
+    "Type": "",
+    "ValidationCriteria": {
+    "MustSatisfy": "GEISA API conformant platforms SHALL use Protocol Buffers (edition=2023) for message payload.",
+    "Keyword": "SHALL",
+    "Requirement": {},
+    "Condition": {},
+    "Dependencies": []
+    }
+    },
+    "api-architecture-P-007-M": {
+    "Function": "API Architecture",
+    "Reference": "api-architecture",
+    "EntityType": "Platform",
+    "ModelVersionIntroduced": "",
+    "Status": "Active",
+    "Notes": "",
+    "ApplicabilityCriteria": [],
+    "Type": "",
+    "ValidationCriteria": {
+    "MustSatisfy": "GEISA API conformant platforms SHALL use the MQTT topics indicated for the API transactions.",
+    "Keyword": "SHALL",
+    "Requirement": {},
+    "Condition": {},
+    "Dependencies": []
+    }
+    },
+    "api-architecture-P-008-M": {
+    "Function": "API Architecture",
+    "Reference": "api-architecture",
+    "EntityType": "Platform",
+    "ModelVersionIntroduced": "",
+    "Status": "Active",
+    "Notes": "",
+    "ApplicabilityCriteria": [],
+    "Type": "",
+    "ValidationCriteria": {
+    "MustSatisfy": "GEISA API conformant platforms SHALL support the Protobuf definition indicated for the API transactions found at |geisa-schemas-repo|.",
+    "Keyword": "SHALL",
+    "Requirement": {},
+    "Condition": {},
+    "Dependencies": []
+    }
+    },
+    "api-architecture-P-009-M": {
+    "Function": "API Architecture",
+    "Reference": "api-architecture",
+    "EntityType": "Platform",
+    "ModelVersionIntroduced": "",
+    "Status": "Active",
+    "Notes": "",
+    "ApplicabilityCriteria": [],
+    "Type": "",
+    "ValidationCriteria": {
+    "MustSatisfy": "For security reasons platform implementations MUST not expose the GEISA API MQTT implementation via external network interfaces.",
+    "Keyword": "MUST",
+    "Requirement": {},
+    "Condition": {},
+    "Dependencies": []
+    }
+    },
+    "api-architecture-P-010-M": {
+    "Function": "API Architecture",
+    "Reference": "api-architecture",
+    "EntityType": "Platform",
+    "ModelVersionIntroduced": "",
+    "Status": "Active",
+    "Notes": "",
+    "ApplicabilityCriteria": [],
+    "Type": "",
+    "ValidationCriteria": {
+    "MustSatisfy": "The GEISA API SHALL use MQTT standard port 1883.",
+    "Keyword": "SHALL",
+    "Requirement": {},
+    "Condition": {},
+    "Dependencies": []
+    }
+    },
+    "api-architecture-P-011-M": {
+    "Function": "API Architecture",
+    "Reference": "api-architecture",
+    "EntityType": "Platform",
+    "ModelVersionIntroduced": "",
+    "Status": "Active",
+    "Notes": "",
+    "ApplicabilityCriteria": [],
+    "Type": "",
+    "ValidationCriteria": {
+    "MustSatisfy": "GEISA API transactions SHALL NOT require the use of TLS.",
+    "Keyword": "SHALL NOT",
+    "Requirement": {},
+    "Condition": {},
+    "Dependencies": []
+    }
+    },
+    "api-architecture-A-012-M": {
+    "Function": "API Architecture",
+    "Reference": "api-architecture",
+    "EntityType": "Application",
+    "ModelVersionIntroduced": "",
+    "Status": "Active",
+    "Notes": "",
+    "ApplicabilityCriteria": [],
+    "Type": "",
+    "ValidationCriteria": {
+    "MustSatisfy": "To enable authentication, GEISA EE conformant applications SHALL be assigned a unique user ID and token by the platform.",
+    "Keyword": "SHALL",
+    "Requirement": {},
+    "Condition": {},
+    "Dependencies": []
+    }
+    },
+    "api-architecture-P-013-M": {
+    "Function": "API Architecture",
+    "Reference": "api-architecture",
+    "EntityType": "Platform",
+    "ModelVersionIntroduced": "",
+    "Status": "Active",
+    "Notes": "",
+    "ApplicabilityCriteria": [],
+    "Type": "",
+    "ValidationCriteria": {
+    "MustSatisfy": "The platform SHALL generate and manage application user ID and tokens locally on-device.",
+    "Keyword": "SHALL",
+    "Requirement": {},
+    "Condition": {},
+    "Dependencies": []
+    }
+    },
+    "api-architecture-P-014-M": {
+    "Function": "API Architecture",
+    "Reference": "api-architecture",
+    "EntityType": "Platform",
+    "ModelVersionIntroduced": "",
+    "Status": "Active",
+    "Notes": "",
+    "ApplicabilityCriteria": [],
+    "Type": "",
+    "ValidationCriteria": {
+    "MustSatisfy": "User IDs and tokens MUST be alphanumeric printable strings.",
+    "Keyword": "MUST",
+    "Requirement": {},
+    "Condition": {},
+    "Dependencies": []
+    }
+    },
+    "api-architecture-P-015-M": {
+    "Function": "API Architecture",
+    "Reference": "api-architecture",
+    "EntityType": "Platform",
+    "ModelVersionIntroduced": "",
+    "Status": "Active",
+    "Notes": "",
+    "ApplicabilityCriteria": [],
+    "Type": "",
+    "ValidationCriteria": {
+    "MustSatisfy": "Tokens MUST contain random data of sufficient length.",
+    "Keyword": "MUST",
+    "Requirement": {},
+    "Condition": {},
+    "Dependencies": []
+    }
+    },
+    "api-architecture-P-016-M": {
+    "Function": "API Architecture",
+    "Reference": "api-architecture",
+    "EntityType": "Platform",
+    "ModelVersionIntroduced": "",
+    "Status": "Active",
+    "Notes": "",
+    "ApplicabilityCriteria": [],
+    "Type": "",
+    "ValidationCriteria": {
+    "MustSatisfy": "API requests SHALL be sent at MQTT QoS level 1, At least once / acknowledged delivery.",
+    "Keyword": "SHALL",
+    "Requirement": {},
+    "Condition": {},
+    "Dependencies": []
+    }
     }
 }
