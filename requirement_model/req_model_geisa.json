@@ -1494,22 +1494,5 @@
     "Condition": {},
     "Dependencies": []
     }
-    },
-    "waveform-P-009-M": {
-    "Function": "Data Format",
-    "Reference": "waveform",
-    "EntityType": "Platform",
-    "ModelVersionIntroduced": "",
-    "Status": "Active",
-    "Notes": "",
-    "ApplicabilityCriteria": [],
-    "Type": "",
-    "ValidationCriteria": {
-    "MustSatisfy": "Samples within the data array MUST be ordered as follows: Time 0 - All voltage channels - All current channels; Time 1 - All voltage channels - All current channels; Time 2 - All voltage channels - All current channels; and so on.",
-    "Keyword": "MUST",
-    "Requirement": {},
-    "Condition": {},
-    "Dependencies": []
-    }
-    }
+  }
 }
