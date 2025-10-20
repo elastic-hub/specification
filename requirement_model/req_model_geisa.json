@@ -1290,5 +1290,73 @@
     "Condition": {},
     "Dependencies": []
     }
+    },
+    "api-status-P-001-M": {
+    "Function": "Urgent Platform Updates",
+    "Reference": "api-status",
+    "EntityType": "Platform",
+    "ModelVersionIntroduced": "",
+    "Status": "Active",
+    "Notes": "",
+    "ApplicabilityCriteria": [],
+    "Type": "",
+    "ValidationCriteria": {
+    "MustSatisfy": "A GEISA compliant implementation MUST provide at a minimum non-application-specific notifications for:",
+    "Keyword": "MUST",
+    "Requirement": {},
+    "Condition": {},
+    "Dependencies": []
+    }
+    },
+    "api-status-P-002-M": {
+    "Function": "Application Updates",
+    "Reference": "api-status",
+    "EntityType": "Platform",
+    "ModelVersionIntroduced": "",
+    "Status": "Active",
+    "Notes": "",
+    "ApplicabilityCriteria": [],
+    "Type": "",
+    "ValidationCriteria": {
+    "MustSatisfy": "A GEISA compliant implementation MUST provide at a minimum application-specific notifications for:",
+    "Keyword": "MUST",
+    "Requirement": {},
+    "Condition": {},
+    "Dependencies": []
+    }
+    },
+    "api-status-P-003-M": {
+    "Function": "Connectivity Updates",
+    "Reference": "api-status",
+    "EntityType": "Platform",
+    "ModelVersionIntroduced": "",
+    "Status": "Active",
+    "Notes": "",
+    "ApplicabilityCriteria": [],
+    "Type": "",
+    "ValidationCriteria": {
+    "MustSatisfy": "A GEISA compliant implementation MUST provide at a minimum non-application-specific notifications for:",
+    "Keyword": "MUST",
+    "Requirement": {},
+    "Condition": {},
+    "Dependencies": []
+    }
+    },
+    "api-status-P-004-M": {
+    "Function": "Connectivity Updates",
+    "Reference": "api-status",
+    "EntityType": "Platform",
+    "ModelVersionIntroduced": "",
+    "Status": "Active",
+    "Notes": "",
+    "ApplicabilityCriteria": [],
+    "Type": "",
+    "ValidationCriteria": {
+    "MustSatisfy": "A GEISA compliant implementation MUST provide at a minimum application-specific notifications for:",
+    "Keyword": "MUST",
+    "Requirement": {},
+    "Condition": {},
+    "Dependencies": []
+    }
     }
 }
